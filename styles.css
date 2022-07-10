@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Fraunces:opsz,wght@9..144,700&family=Josefin+Sans:wght@300&display=swap');
+ :root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --VeryDarkGray: hsl(0, 0%, 41%);
+}
+
+
+/* 
+font-family: 'Alata', sans-serif;
+font-family: 'Fraunces', serif;
+font-family: 'Josefin Sans', sans-serif;
+
+*/
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0px;
+    padding: 64px 11.3% 0px 11.3%;
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+}
+
+nav {
+    color: white;
+}
+
+#nav-bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-items {
+    flex-flow: end;
+    display: flex;
+    font-family: 'Alata', sans-serif;
+    gap: 34px;
+    align-items: center;
+}
+
+.first-item {
+    height: 37em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-item-title {
+    border: solid white 2px;
+    color: white;
+    margin-right: 41.5%;
+    margin-top: 11.6%;
+    padding: 2.6rem 0 1.5rem 2.6rem;
+    font-size: 4.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+
+.section-2 {
+    position: relative;
+    margin: 14% 0%;
+    display: flex;
+}
+
+.text-box {
+    position: absolute;
+    justify-content: space-between;
+    background-color: var(--White);
+    bottom: 0%;
+    right: 0%;
+    padding-left: 8.8%;
+    padding-top: 8.7%;
+    box-sizing: border-box;
+    height: 21.2rem;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box>h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    font-size: 3.2rem;
+    margin: 0px;
+}
+
+.text-box>p {
+    color: var(--DarkGray);
+    font-family: 'Alata', serif;
+    line-height: 1.7em;
+    margin: 0px;
+}
+
+.section-3 {
+    background-color: red;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-header>h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
