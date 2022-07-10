@@ -89,8 +89,6 @@ nav {
     margin: 0px;
 }
 
-.section-3 {}
-
 .section-header {
     display: flex;
     justify-content: space-between;
@@ -197,6 +195,10 @@ footer {
 }
 
 .mobile {
+    display: none;
+}
+
+.drawer {
     display: none;
 }
 
