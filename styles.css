@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Fraunces:opsz,wght@9..144,700&family=Josefin+Sans:wght@300&display=swap');
- :root {
+:root {
     --White: hsl(0, 0%, 100%);
     --Black: hsl(0, 0%, 0%);
     --DarkGray: hsl(0, 0%, 55%);
@@ -14,6 +14,7 @@ body {
     margin: 0px;
     padding: 64px 11.3% 0px 11.3%;
     background-image: url(./images/desktop/image-hero.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -191,8 +192,119 @@ footer {
     color: var(--DarkGray);
 }
 
-
-/* 
-font-family: 'Alata', sans-serif;
-font-family: 'Fraunces', serif;
-font-family: 'Josefin Sans', sans-serif;
+@media screen and (max-width: 1184px) {
+    body {
+        margin: 0px;
+        padding: 39px 6% 0px 6%;
+        background-image: url(./images/mobile/image-hero.jpg);
+        box-sizing: border-box;
+    }
+    nav {
+        color: white;
+    }
+    #nav-bar>img {
+        height: 24px;
+    }
+    #nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-items {
+        display: none;
+    }
+    .first-item {
+        height: 37em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-item-title {
+        border: solid white 2px;
+        color: white;
+        margin-right: 0px;
+        padding: 0.72em 0.2em;
+        margin-top: 0%;
+        font-size: 2.9rem;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 100;
+    }
+    .section-2 {
+        position: relative;
+        margin: 14% 0%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .text-box {
+        position: static;
+        justify-content: space-between;
+        background-color: var(--White);
+        padding-left: 0%;
+        padding-top: 8.7%;
+        box-sizing: border-box;
+        height: 21.2rem;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-box>h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 100;
+        font-size: 2.2rem;
+        margin: 0px;
+    }
+    .text-box>p {
+        color: var(--DarkGray);
+        font-family: 'Alata', serif;
+        line-height: 1.7em;
+        margin: 0px;
+    }
+    /* Section 3 */
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 38px 0px;
+    }
+    .section-header>h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 100;
+    }
+    button {
+        font-family: 'Alata', sans-serif;
+        background-color: transparent;
+        border: 1px black solid;
+        font-size: 1.0rem;
+        letter-spacing: 0.3em;
+        padding: 0.6em 2.5em;
+    }
+    .section-body {
+        color: var(--White);
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    .card {
+        color: var(--White);
+        position: relative;
+    }
+    .card-img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .card-title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.0rem;
+        font-weight: 200;
+        position: absolute;
+        bottom: 1%;
+        left: 15.2%;
+        margin-right: 10%;
+        z-index: 2;
+    }
+}
